@@ -1,0 +1,12 @@
+{
+  "name": "perp",
+  "description": "For working with pipeware.",
+  "version": "0.0.1",
+  "repository": {
+    "url": "git://github.com/lukeburns/perp.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "pipeware": "^0.0.1"
+  }
+}
