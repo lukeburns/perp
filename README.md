@@ -1,5 +1,5 @@
 ## perp
-For working with pipeware. Built on [pipeware](https://github.com/lukeburns/pipeware).
+For working with [pipeware](https://github.com/lukeburns/pipeware).
 
 ### Example
 ```
@@ -29,12 +29,12 @@ app
 
 Now you can do the following:
 
-#### Gzip README.md
+#### Gzip README.md to README.md.gz
 ```
 app.get('README.md').pipe(app.put('README.md.gz'));
 ```
 
-#### Gunzip README and pipe to stdout
+#### Gunzip README.md.gz and pipe to stdout
 ```
 app.get('README.md.gz').pipe(process.stdout);
 ```
