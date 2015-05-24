@@ -10,9 +10,7 @@ function perp () {
 
 perp.prototype.define = function (name) {
 	var mw = pipeware();
-	this[name] = function () {
-		return mw.run.apply(mw, arguments)
-	}
+	this[name] = mw.run.bind(mw);
 	this[name].use = mw.use.bind(mw);
 	return this[name];
 }
